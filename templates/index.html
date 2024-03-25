@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Model RNN</h1>
+     <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="csv_file">Incarca fisier CSV:</label>
+        <input type="file" id="csv_file" name="file" accept=".csv"><br><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
